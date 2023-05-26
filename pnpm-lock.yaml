@@ -1416,7 +1416,6 @@ packages:
       {
         integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==,
       }
-    engines: { node: ">=10" }
     dependencies:
       once: 1.4.0
       wrappy: 1.0.2
@@ -2101,7 +2100,6 @@ packages:
       {
         integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==,
       }
-    engines: { node: ">=8.0" }
     dependencies:
       punycode: 2.3.0
     dev: true
@@ -2167,10 +2165,10 @@ packages:
       }
     dev: true
 
-  /vite@4.3.2:
+  /yallist@4.0.0:
     resolution:
       {
-        integrity: sha512-9R53Mf+TBoXCYejcL+qFbZde+eZveQLDYd9XgULILLC1a5ZwPaqgmdVpL8/uvw2BM/1TzetWjglwm+3RO+xTyw==,
+        integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==,
       }
     dev: true
 
