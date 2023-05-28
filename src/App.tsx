@@ -1,10 +1,9 @@
-import { RootState } from "./app/store";
+import { useAppDispatch, useAppSelector } from "./app/hooks";
 import { reset, addMany, addOne } from "./slices/counter";
-import { useSelector, useDispatch } from "react-redux";
 
 function App() {
-  const dispatch = useDispatch();
-  const count = useSelector((state: RootState) => state.counter.count);
+  const dispatch = useAppDispatch();
+  const count = useAppSelector((state) => state.counter.count);
 
   return (
     <>

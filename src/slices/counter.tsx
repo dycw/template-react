@@ -7,7 +7,7 @@ const state: State = {
   count: 0,
 };
 
-const slice = createSlice({
+export const counterSlice = createSlice({
   name: "counter",
   initialState: state,
   reducers: {
@@ -23,6 +23,4 @@ const slice = createSlice({
   },
 });
 
-const counterReducer = slice.reducer;
-export { counterReducer };
-export const { addOne, addMany, reset } = slice.actions;
+export const { addOne, addMany, reset } = counterSlice.actions;
