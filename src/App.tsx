@@ -1,33 +1,18 @@
-import "./App.css";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import { useState } from "react";
+import { RootState } from "./app/store";
+import { reset, addMany, addOne } from "./slices/counter";
+import { useSelector, useDispatch } from "react-redux";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const dispatch = useDispatch();
+  const count = useSelector((state: RootState) => state.counter.count);
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <h1>Hello</h1>
+      <div>Count: {count}</div>
+      <button onClick={() => dispatch(addOne())}>Add 1</button>
+      <button onClick={() => dispatch(addMany(2))}>Add 2</button>
+      <button onClick={() => dispatch(reset())}>Reset</button>
     </>
   );
 }
