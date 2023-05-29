@@ -31,5 +31,12 @@
     "prettier-plugin-tailwindcss": "^0.3.0",
     "typescript": "^5.0.4",
     "vite": "^4.3.9"
+  },
+  "prettier": {
+    "plugins": [
+      "prettier-plugin-css-order",
+      "prettier-plugin-organize-imports",
+      "prettier-plugin-tailwindcss"
+    ]
   }
 }
