@@ -1,6 +1,5 @@
-import { api } from "../api/api";
-import { Product } from "../api/api";
 import { createSlice } from "@reduxjs/toolkit";
+import { Product, api } from "../api/api";
 
 type State = {
   products: Product[];
