@@ -1,8 +1,8 @@
 import { useGetProductsQuery } from "./api/api";
 import { useAppDispatch, useAppSelector } from "./app/hooks";
-import { reset, addMany, addOne } from "./slices/counter";
+import { addMany, addOne, reset } from "./slices/counter";
 
-function App() {
+export default function App() {
   const dispatch = useAppDispatch();
   const count = useAppSelector((state) => state.counter.count);
 
@@ -34,5 +34,3 @@ function App() {
     </>
   );
 }
-
-export default App;
