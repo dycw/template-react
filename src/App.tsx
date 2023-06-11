@@ -23,14 +23,37 @@ export default function App() {
 
   return (
     <>
-      <h1>React Template</h1>
-      <h2>State</h2>
-      <div>Count: {count}</div>
-      <button onClick={() => dispatch(addOne())}>Add 1</button>
-      <button onClick={() => dispatch(addMany(2))}>Add 2</button>
-      <button onClick={() => dispatch(reset())}>Reset</button>
-      <h2>API</h2>
-      <div>{content}</div>
+      <div className="flex flex-col gap-10">
+        <h1 className="text-4xl">React Template</h1>
+        <div>
+          <h2 className="text-2xl">State</h2>
+          <div className="flex gap-4">
+            <div>Count: {count}</div>
+            <button
+              className="bg-gray-500 text-white"
+              onClick={() => dispatch(addOne())}
+            >
+              Add 1
+            </button>
+            <button
+              className="bg-gray-500 text-white"
+              onClick={() => dispatch(addMany(2))}
+            >
+              Add 2
+            </button>
+            <button
+              className="bg-gray-500 text-white"
+              onClick={() => dispatch(reset())}
+            >
+              Reset
+            </button>
+          </div>
+        </div>
+        <div>
+          <h2 className="text-2xl">API</h2>
+          <div>{content}</div>
+        </div>
+      </div>
     </>
   );
 }

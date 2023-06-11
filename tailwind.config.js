@@ -1,12 +1,11 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./src/**/*.{js,ts,jsx,tsx}"],
+export default {
+  content: ["./src/**/*.tsx"],
   corePlugins: {
     aspectRatio: false,
   },
   plugins: [
     require("@tailwindcss/aspect-ratio"),
-    require("@tailwindcss/container-queries"),
     require("@tailwindcss/forms"),
     require("@tailwindcss/typography"),
   ],
