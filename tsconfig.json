@@ -5,9 +5,9 @@
     "outDir": "dist"
   },
   "extends": [
-    "@tsconfig/esm/tsconfig.json",
     "@tsconfig/node-lts/tsconfig.json",
-    "@tsconfig/strictest/tsconfig.json"
+    "@tsconfig/strictest/tsconfig.json",
+    "@tsconfig/esm/tsconfig.json"
   ],
   "include": ["src"],
   "references": [
