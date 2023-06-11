@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "jsx": "preserve",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "outDir": "dist"
   },
   "extends": [
