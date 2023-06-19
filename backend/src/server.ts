@@ -30,3 +30,4 @@ const server = createHTTPServer({
 });
 
 server.listen(3000);
+console.log("tRPC listening to port 3000");

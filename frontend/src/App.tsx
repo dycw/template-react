@@ -2,7 +2,7 @@ import { useGetProductsQuery } from "./api/api";
 import { useAppDispatch, useAppSelector } from "./app/hooks";
 import { addMany, addOne, reset } from "./slices/counter";
 
-export default function App() {
+export default async function App() {
   const dispatch = useAppDispatch();
   const count = useAppSelector((state) => state.counter.count);
 
@@ -21,6 +21,17 @@ export default function App() {
     <div>{error.toString()}</div>
   ) : null;
 
+  // const user = await trpc.userById.query(1);
+  // const userNode = user ? (
+  // 	<>
+  // 		<p>id = {user.id}</p>
+  // 		<p>name = {user.name}</p>
+  // 	</>
+  // ) : (
+  // 	<p>User = undefined</p>
+  // );
+
+  const userNode = 123;
   return (
     <>
       <div className="flex flex-col gap-10">
@@ -52,6 +63,10 @@ export default function App() {
         <div>
           <h2 className="text-2xl">API</h2>
           <div>{content}</div>
+        </div>
+        <div>
+          <h2 className="text-2xl">TRPC</h2>
+          {userNode}
         </div>
       </div>
     </>
