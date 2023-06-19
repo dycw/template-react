@@ -8,6 +8,9 @@ dependencies:
   "@trpc/server":
     specifier: ^10.31.0
     version: 10.31.0
+  zod:
+    specifier: ^3.21.4
+    version: 3.21.4
 
 devDependencies:
   "@tsconfig/esm":
@@ -19,6 +22,9 @@ devDependencies:
   "@tsconfig/strictest":
     specifier: ^2.0.1
     version: 2.0.1
+  "@types/lodash":
+    specifier: ^4.14.195
+    version: 4.14.195
   "@types/node":
     specifier: ^20.3.1
     version: 20.3.1
@@ -179,6 +185,13 @@ packages:
     resolution:
       {
         integrity: sha512-Hr5Jfhc9eYOQNPYO5WLDq/n4jqijdHNlDXjuAQkkt+mWdQR+XJToOHrsD4cPaMXpn6KO7y2+wM8AZEs8VpBLVA==,
+      }
+    dev: true
+
+  /@types/lodash@4.14.195:
+    resolution:
+      {
+        integrity: sha512-Hwx9EUgdwf2GLarOjQp5ZH8ZmblzcbTBC2wtQWNKARBSxM9ezRIAUpeDTgoQRAFB0+8CNWXVA9+MaSOzOF3nPg==,
       }
     dev: true
 
@@ -1420,3 +1433,10 @@ packages:
       }
     engines: { node: ">=10" }
     dev: true
+
+  /zod@3.21.4:
+    resolution:
+      {
+        integrity: sha512-m46AKbrzKVzOzs/DZgVnG5H55N1sv1M8qZU3A8RIKbs3mrACDNeIOeilDymVb2HdmP8uwshOCF4uJ8uM9rCqJw==,
+      }
+    dev: false
